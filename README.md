@@ -1,4 +1,4 @@
-In this project, let's perform **Fetch and Routing** by applying the concepts we have learned till now.
+In this project, let's perform **Fetch and Routing**.
 
 ### Refer to the image below:
 
@@ -29,29 +29,6 @@ In this project, let's perform **Fetch and Routing** by applying the concepts we
 </details>
 
 ### Completion Instructions
-
-<details>
-<summary>Functionality to be added</summary>
-<br/>
-
-The app must have the following functionalities
-
-- When the app is opened, Home Route should be displayed
-- When the Home Route is opened,
-
-  - Make HTTP GET request to the **blogsApiUrl**
-  - **_loader_** should be displayed while fetching the data
-  - After fetching the data, the list of blogs should be displayed
-
-- When a blog item in Home Route is clicked,
-  - Page should be navigated to the Blog Item Details Route with the URL `/blogs/:id`
-- When the Blog Item Details Route is opened,
-  - Make HTTP GET request to the **blogItemDetailsApiUrl** with the blog id to get the details of the blog
-    - Example: `https://apis.ccbp.in/blogs/2`
-  - **_loader_** should be displayed while fetching the data
-  - After fetching the data, the details of the blog should be displayed
-
-</details>
 
 <details>
 
@@ -126,66 +103,7 @@ Returns a response containing the details of the specific blog
 <br/>
 </details>
 
-<details>
-<summary>Implementation Files</summary>
-<br/>
 
-Use these files to complete the implementation:
-
-- `src/App.js`
-- `src/components/Home/index.js`
-- `src/components/BlogList/index.js`
-- `src/components/BlogList/index.css`
-- `src/components/BlogItem/index.js`
-- `src/components/BlogItem/index.css`
-- `src/components/BlogItemDetails/index.js`
-- `src/components/BlogItemDetails/index.css`
-</details>
-
-### Important Note
-
-<details>
-<summary>Click to view</summary>
-
-<br/>
-
-**The following instructions are required for the tests to pass**
-
-- `Home` route should consist of `/` in the URL path
-- `About` route should consist of `/about` in the URL path
-- `Contact` route should consist of `/contact` in the URL path
-- `BlogItemDetails` route should consist of `/blogs/:id` in the URL path
-- No need to use the `BrowserRouter` in `App.js` as we have already included in `index.js` file
-- Wrap the `Loader` component with an HTML container element and add the `data-testid` attribute value as `loader` to it as shown below
-
-  ```jsx
-  <div data-testid="loader">
-    <Loader type="TailSpin" color="#00bfff" height={50} width={50} />
-  </div>
-  ```
-
-</details>
-
-### Resources
-
-<details>
-<summary>Colors</summary>
-
-<br/>
-
-<div style="background-color: #8e8e8e; width: 150px; padding: 10px; color: white">Hex: #8e8e8e</div>
-<div style="background-color: #000000; width: 150px; padding: 10px; color: white">Hex: #000000</div>
-<div style="background-color: #d3d3d3; width: 150px; padding: 10px; color: white">Hex: #d3d3d3</div>
-<div style="background-color: #2f4f4f; width: 150px; padding: 10px; color: white">Hex: #2f4f4f</div>
-
-</details>
-
-<details>
-<summary>Font-families</summary>
-
-- Roboto
-
-</details>
 
 > ### _Things to Keep in Mind_
 >
